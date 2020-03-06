@@ -1,0 +1,29 @@
+body{
+	background: url(img/space.jpg);
+}
+.planet {
+  width: 300px;
+  height: 300px;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+@keyframes spin {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.sun > div {
+  width: 200%;
+  height: 200%;
+  animation: spin 90s linear alternate infinite;
+  background: url(img/sun.jpg);
+  background-size: cover;
+}
+.mercury > div {
+  width: 200%;
+  height: 100%;
+  animation: spin 20s linear alternate infinite;
+  background: url(img/mercury.jpg);
+  background-size: cover;
+}
